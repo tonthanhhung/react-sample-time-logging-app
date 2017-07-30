@@ -1,7 +1,5 @@
 Timer Project
-- At this timer, learn should be able to implement all the basic react component with hard code data to visualize the basic structure
-- explain about vendor, helpers
-- explain what need to be done
-- add gif/ snapshot
-- add todo for leaner
-- branch v1 will be the solution
+- Now we have already implemented some basic stuff in React, congratulation
+- let move to the next step. 
+- introduce the next step should be.
+- solution should be in branch steps/step2
