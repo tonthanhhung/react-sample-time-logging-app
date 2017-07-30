@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import EditableTimer  from './EditableTimer';
+import EditableTimer from './EditableTimer';
 
 class EditableTimerList extends Component {
   render() {
+    //TODO: Implement the render a list of timers passed from parent components via this props
+    const timers = this.props.timers.map(timer =>
+      <EditableTimer
+        id={timer.id}
+        key={timer.id}
+        title={timer.title}
+        project={timer.project}
+        elapsed={timer.elapsed}
+        runningSince={timer.runningSince}
+        editFormOpen={timer.editFormOpen}
+      />
+    );
     return (
       <div id="timers">
-        <EditableTimer
-          title="Learn React"
-          project="Web Domination"
-          elapsed="8986300"
-          runningSince={null}
-          editFormOpen={false}
-        />
-
-        <EditableTimer
-          title="Learn Redux On the same way"
-          project="World Domination"
-          elapsed="3890985"
-          runningSince={null}
-          editFormOpen={true}
-        />
+        {timers}
       </div>
     );
   }
